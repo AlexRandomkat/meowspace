@@ -1,0 +1,218 @@
+*{
+  margin: 0;
+}
+
+/*
+ *
+ * Site Organization
+ *
+ */
+html {
+  font-size: 13px;
+  font-family: "MS Gothic", sans-serif;
+  text-align: left;
+  background-color: #1a1a1a;
+}
+
+#headerimg, #content{
+  margin: auto;
+  width: 750px;
+  display: flex;
+  background-color: #bbbbbb;
+}
+
+#splashimg{
+  width: 660px
+}
+
+
+nav{
+  margin: 10px 5px 5px 5px;
+  width: 80px;
+}
+
+.navbutton{
+  width: 72px;
+  margin-top: 40px
+}
+
+#webrings{
+  display: flex;
+  justify-content: center;
+}
+/*
+ *
+ * Formatting
+ *
+ */
+h1{
+  text-align: left;
+  margin: 0px 0px 0px 12px;
+  /*text-shadow: 1px 0 0px white, -1px 0 0px white, 0 1px 0px white, 0 -1px 0px white, -1px -1px 0px white, 1px -1px 0px white, 1px 1px 0px white, -1px 1px 0px white;*/
+
+}
+
+h2{
+  text-align: left;
+  margin: 0px 0px 0px 12px;
+}
+
+
+main{
+  /*text-align: center;*/
+}
+
+p{
+  padding: 12px 0px 0px 12px;
+}
+
+.center-align{
+  text-align: center;
+}
+
+.left-align{
+  text-align: left;
+}
+
+.no_line_height{
+  line-height: 1;
+}
+
+.content_boxed{
+  margin: 0px 12px 0px 12px;
+  padding: 18px 6px 6px 6px;
+  border: 3px solid black;
+  border-top: none;
+}
+
+.content_unboxed{
+  margin: 12px 12px 0px 12px;
+  padding: 7px 7px 7px 7px;
+}
+
+.flexdiv{
+  display: flex;
+}
+
+/*
+ *
+ * About page
+ *
+ */
+#interests{
+  width: 462px;
+  background-color: #444444;
+  padding: 6px 6px 6px 6px;
+  margin: 12px 0px 0px 0px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+#stemlist{
+  width: 220px;
+  background-color: #1a1a1a;
+  color:   #ee8f00;
+  border: 2px #ee8f00 solid;
+  padding: 6px 6px 6px 0px;
+  margin: 0px 6px 0px 6px;
+  text-align: left;
+}
+
+#furrylist{
+  width: 200px;
+  background-color: #1a1a1a;
+  padding: 6px 6px 6px 0px;
+  margin: 0px 6px 0px 6px;
+  color:  #72c2c1;
+  border: 2px #72c2c1 solid;
+  text-align: left;
+}
+
+#other{
+  width: 200px;
+  background-color: #1a1a1a;
+  padding: 6px 6px 6px 0px;
+  margin: 6px 6px 0px 6px;
+  color: #67d300;
+  border: 2px #67d300 solid;
+  text-align: left;
+}
+
+
+p {
+  text-align: left;
+}
+
+ul {
+  list-style-type: '— ';
+  padding-left: 24px;
+}
+
+.suplist {
+  list-style-type: none;
+  font-size: 15px;
+}
+
+.sublist {
+  list-style-type: '- ';
+  font-size: 12px;
+}
+
+/*
+ *
+ * Art page
+ *
+ */
+#tos{
+  padding-left: 39px;
+}
+#tou{
+  height: 200px;
+}
+#yur{
+  height: 200px;
+}
+#ali{
+  height: 200px;
+}
+#pas{
+  height: 200px;
+}
+#star{
+  height: 200px;
+}
+#lum{
+  height: 200px;
+}
+#clov{
+  height: 200px;
+}
+#rav{
+  height: 200px;
+}
+#app{
+  height: 200px;
+}
+#bab{
+  height: 200px;
+}
+#o55{
+  height: 200px;
+}
+
+/*
+ * Link text formatting
+ */
+
+a:link {
+  color: #830003;
+}
+
+a:visited {
+  color: #4900ab;
+}
+
+a:hover {
+  color: #90007b;
+  text-decoration: none;
+}

@@ -1,22 +1,35 @@
-*{
-  margin: 0;
-}
-
 /*
  *
  * Site Organization
  *
  */
+
 html {
-  font-size: 13px;
-  font-family: "MS Gothic", sans-serif;
+  font-family:  "Fragment Mono", monospace;
   text-align: left;
   background-color: #1a1a1a;
+  -webkit-text-size-adjust:100%;
+  font-size: 10px;
+}
+
+#headerimg, #content{
+    width: 100vw;
+}
+
+@media screen and (orientation:landscape) {
+  #headerimg, #content{
+    width: min(750px, 100vw);
+  }
+}
+
+@media screen and (orientation:portrait) {
+  #headerimg, #content{
+    width: 200vw;
+  }
 }
 
 #headerimg, #content{
   margin: auto;
-  width: 750px;
   display: flex;
   background-color: #bbbbbb;
 }
@@ -49,7 +62,12 @@ h1{
   text-align: left;
   margin: 0px 0px 0px 12px;
   /*text-shadow: 1px 0 0px white, -1px 0 0px white, 0 1px 0px white, 0 -1px 0px white, -1px -1px 0px white, 1px -1px 0px white, 1px 1px 0px white, -1px 1px 0px white;*/
+}
 
+@media screen and (orientation:portrait) {
+  h1{
+    font-size: 3rem;
+  }
 }
 
 h2{
@@ -59,11 +77,20 @@ h2{
 
 
 main{
-  /*text-align: center;*/
+  font-size: 10px;
+
 }
 
 p{
   padding: 12px 0px 0px 12px;
+  margin: 0px;
+  max-width: 100%;
+}
+
+@media screen and (orientation:portrait) {
+  p{
+    font-size: 2rem;
+  }
 }
 
 .center-align{
@@ -75,7 +102,7 @@ p{
 }
 
 .no_line_height{
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .content_boxed{
@@ -83,11 +110,15 @@ p{
   padding: 18px 6px 6px 6px;
   border: 3px solid black;
   border-top: none;
+  border-bottom: none;
+  border-right: none;
+  max-width: 100%;
 }
 
 .content_unboxed{
   margin: 12px 12px 0px 12px;
   padding: 7px 7px 7px 7px;
+  max-width: 100%;
 }
 
 .flexdiv{
@@ -100,7 +131,7 @@ p{
  *
  */
 #interests{
-  width: 462px;
+  width: 80%;
   background-color: #444444;
   padding: 6px 6px 6px 6px;
   margin: 12px 0px 0px 0px;
@@ -109,33 +140,38 @@ p{
   font-size: 16px;
 }
 #stemlist{
-  width: 220px;
+  width: 50%;
   background-color: #1a1a1a;
-  color:   #ee8f00;
+  color: #ee8f00;
   border: 2px #ee8f00 solid;
   padding: 6px 6px 6px 0px;
   margin: 0px 6px 0px 6px;
   text-align: left;
 }
 
+#furryOtherWrapper{
+  width: 45%;
+  margin: auto;
+}
+
 #furrylist{
-  width: 200px;
   background-color: #1a1a1a;
   padding: 6px 6px 6px 0px;
-  margin: 0px 6px 0px 6px;
   color:  #72c2c1;
   border: 2px #72c2c1 solid;
   text-align: left;
 }
 
 #other{
-  width: 200px;
   background-color: #1a1a1a;
   padding: 6px 6px 6px 0px;
-  margin: 6px 6px 0px 6px;
   color: #67d300;
   border: 2px #67d300 solid;
   text-align: left;
+}
+
+#furrytag{
+  font-size: 12px;
 }
 
 
@@ -151,6 +187,7 @@ ul {
 .suplist {
   list-style-type: none;
   font-size: 15px;
+  padding-left: 12px;
 }
 
 .sublist {

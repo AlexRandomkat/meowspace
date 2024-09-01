@@ -281,7 +281,7 @@ ul {
   width: min(362px, 49.364vw);
   background-size:contain;
   background-image: url("/images/gallery/pdodp.jpg");
-  background-image: image-set("/images/gallery/pdodp.jpg" 1x, "/images/pdodp2x.jpg" 2x);
+  background-image: image-set("/images/gallery/pdodp.jpg" 1x, "/images/gallery/pdodp2x.jpg" 2x);
   border: 0.3rem solid black;
   margin: 0rem 0.3rem 0.3rem 0rem;
 }

@@ -5,7 +5,6 @@
  */
 
 html {
-  /*font-family:  "Fragment Mono", monospace;*/
   font-family: 'Courier New', monospace;
   text-align: left;
   background-color: #1a1a1a;
@@ -270,79 +269,176 @@ ul {
  *
  */
 
+/*
+ * downsize image formula: [2*] 1440 * 620 / (<original width 1> + <original width 2>)
+ * vw = <p width> / 733.3
+ */
+
 #commbutton{
   position:relative;
-  right: min(80px, 10vw);
-  right: calc(min(80px, 10vw) - 2rem);
+  right: min(40px, 5vw);
+  right: calc(min(40px, 50vw) - 2rem);
+}
 
+#sk16{
+  height: min(310px, 42.272vw);
+  width: min(310px, 49.502vw);
+  background-size:contain;
+  background-image: url("/images/gallery/16p.jpg");
+  background-image: image-set("/images/gallery/16p.jpg" 1x, "/images/gallery/16p2x.jpg" 2x);
+  border: 0.3rem solid black;
+  margin: 0rem 0.3rem 0.3rem 0rem;
+}
+
+#skwk{
+  height: min(317px, 43.229vw);
+  width: min(363px, 49.502vw);
+  background-size:contain;
+  background-image: url("/images/gallery/15p.jpg");
+  background-image: image-set("/images/gallery/15p.jpg" 1x, "/images/gallery/15p2x.jpg" 2x);
+  border: 0.3rem solid black;
+  margin: 0rem 0.3rem 0.3rem 0rem;
+}
+
+#kbd{
+  height: min(317px, 43.229vw);
+  width: min(257px, 35.047vw);
+  background-size:contain;
+  background-image: url("/images/gallery/14p.jpg");
+  background-image: image-set("/images/gallery/14p.jpg" 1x, "/images/gallery/14p2x.jpg" 2x);
+  border: 0.3rem solid black;
+}
+
+#skbe{
+  height: min(248px, 33.819vw);
+  width: min(314px, 42.820vw);
+  background-size:contain;
+  background-image: url("/images/gallery/13p.jpg");
+  background-image: image-set("/images/gallery/13p.jpg" 1x, "/images/gallery/13p2x.jpg" 2x);
+  border: 0.3rem solid black;
+  margin: 0rem 0.3rem 0.3rem 0rem;
+}
+
+#kds{
+  height: min(248px, 33.819vw);
+  width: min(314px, 42.820vw);
+  background-size:contain;
+  background-image: url("/images/gallery/12p.jpg");
+  background-image: image-set("/images/gallery/12p.jpg" 1x, "/images/gallery/12p2x.jpg" 2x);
+  border: 0.3rem solid black;
+}
+
+#skgrl{
+  height: min(323px, 44.047vw);
+  width: min(377px, 51.411vw);
+  background-size:contain;
+  background-image: url("/images/gallery/11p.jpg");
+  background-image: image-set("/images/gallery/11p.jpg" 1x, "/images/gallery/11p2x.jpg" 2x);
+  border: 0.3rem solid black;
+  margin: 0rem 0.3rem 0.3rem 0rem;
+}
+
+#scarf{
+  height: min(323px, 44.047vw);
+  width: min(242px, 33.001vw);
+  background-size:contain;
+  background-image: url("/images/gallery/10p.jpg");
+  background-image: image-set("/images/gallery/10p.jpg" 1x, "/images/gallery/10p2x.jpg" 2x);
+  border: 0.3rem solid black;
 }
 
 #tou{
   height: min(265px, 36.136vw);
   width: min(362px, 49.364vw);
   background-size:contain;
-  background-image: url("/images/gallery/pdodp.jpg");
-  background-image: image-set("/images/gallery/pdodp.jpg" 1x, "/images/gallery/pdodp2x.jpg" 2x);
+  background-image: url("/images/gallery/9p.jpg");
+  background-image: image-set("/images/gallery/9p.jpg" 1x, "/images/gallery/9p2x.jpg" 2x);
   border: 0.3rem solid black;
   margin: 0rem 0.3rem 0.3rem 0rem;
 }
+
 #yur{
   height: min(265px, 36.136vw);
   width: min(257px, 35.045vw);
   background-size:contain;
-  background-image: url("/images/gallery/yur2ep.png");
-  background-image: image-set("/images/gallery/yur2ep.png" 1x, "/images/gallery/yur2ep2x.png" 2x);
+  background-image: url("/images/gallery/8p.jpg");
+  background-image: image-set("/images/gallery/8p.jpg" 1x, "/images/gallery/8p2x.jpg" 2x);
   border: 0.3rem solid black;
 }
+
+#trav{
+  height: min(359px, 48.954vw);
+  width: min(314px, 42.818vw);
+  background-size:contain;
+  background-image: url("/images/gallery/7p.jpg");
+  background-image: image-set("/images/gallery/7p.jpg" 1x, "/images/gallery/7p2x.jpg" 2x);
+  border: 0.3rem solid black;
+  margin: 0rem 0.3rem 0.3rem 0rem;
+}
+
+#star{
+  height: min(359px, 48.954vw);
+  width: min(314px, 42.818vw);
+  background-size:contain;
+  background-image: url("/images/gallery/6p.jpg");
+  background-image: image-set("/images/gallery/6p.jpg" 1x, "/images/gallery/6p2x.jpg" 2x);
+  border: 0.3rem solid black;
+}
+
 #pas{
   height: min(310px, 42.273vw);
   width: min(272px, 37.091vw);
   background-size:contain;
-  background-image: url("/images/gallery/4141128p.png");
-  background-image: image-set("/images/gallery/4141128p.png" 1x, "/images/gallery/4141128p2x.png" 2x);
+  background-image: url("/images/gallery/5p.jpg");
+  background-image: image-set("/images/gallery/5p.jpg" 1x, "/images/gallery/5p2x.jpg" 2x);
   border: 0.3rem solid black;
   margin: 0rem 0.3rem 0.3rem 0rem;
 }
+
 #clov{
   height: min(310px, 42.273vw);
   width: min(346px, 47.182vw);
   background-size:contain;
-  background-image: url("/images/gallery/1785277p.jpg");
-  background-image: image-set("/images/gallery/1785277p.jpg" 1x, "/images/gallery/1785277p2x.jpg" 2x);
+  background-image: url("/images/gallery/4p.jpg");
+  background-image: image-set("/images/gallery/4p.jpg" 1x, "/images/gallery/4p2x.jpg" 2x);
   border: 0.3rem solid black;
 }
+
 #rav{
   height: min(260px, 34.455vw);
   width: min(347px, 47.318vw);
   background-size:contain;
-  background-image: url("/images/gallery/ravp.png");
-  background-image: image-set("/images/gallery/ravp.png" 1x, "/images/gallery/ravp.png" 2x);
+  background-image: url("/images/gallery/3p.jpg");
+  background-image: image-set("/images/gallery/3p.jpg" 1x, "/images/gallery/3p2x.jpg" 2x);
   border: 0.3rem solid black;
   margin: 0rem 0.3rem 0.3rem 0rem;
 }
+
 #app{
   height: min(260px, 34.455vw);
   width: min(273px, 37.227vw);
   background-size:contain;
-  background-image: url("/images/gallery/skdksp.png");
-  background-image: image-set("/images/gallery/skdksp.png" 1x, "/images/gallery/skdksp2x.png" 2x);
+  background-image: url("/images/gallery/2p.jpg");
+  background-image: image-set("/images/gallery/2p.jpg" 1x, "/images/gallery/2p2x.jpg" 2x);
   border: 0.3rem solid black;
 }
+
 #bab{
   height: min(310px, 42.273vw);
   width: min(310px, 42.273vw);
   background-size:contain;
-  background-image: url("/images/gallery/skssp.jpg");
-  background-image: image-set("/images/gallery/skssp.jpg" 1x, "/images/gallery/skssp2x.jpg" 2x);
+  background-image: url("/images/gallery/1p.jpg");
+  background-image: image-set("/images/gallery/1p.jpg" 1x, "/images/gallery/1p2x.jpg" 2x);
   border: 0.3rem solid black;
   margin: 0rem 0.3rem 0.3rem 0rem;
 }
+
 #o55{
   height: min(310px, 42.273vw);
   width: min(310px, 42.273vw);
   background-size:contain;
-  background-image: url("/images/gallery/55-1440p.jpg");
-  background-image: image-set("/images/gallery/55-1440p.jpg" 1x, "/images/gallery/55-1440p2x.jpg" 2x);
+  background-image: url("/images/gallery/0p.jpg");
+  background-image: image-set("/images/gallery/0p.jpg" 1x, "/images/gallery/0p2x.jpg" 2x);
   border: 0.3rem solid black;
 }
 

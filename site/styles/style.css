@@ -12,6 +12,10 @@ html {
   font-size: clamp(8px, 2vw, 13px );
 }
 
+/*
+ * VW conversion: 100vw = 750px
+ * 1em = 13px (full) -> 1em = 1.7333vw
+ */
 #headerimg, #content{
     width: min(750px, 100vw);
 }
@@ -23,18 +27,18 @@ html {
 }
 
 #headerimg{
-  height: min(268px, 35.7vw);
+  height: min(268px, 35.73vw);
   background-size: contain;
   background-image: url("/images/sited1.jpg");
   background-image: image-set("/images/sited1.jpg" 1x, "/images/sited1-2x.jpg" 2x);
 }
 
 #splashimg{
-  width: min(660px, 90vw);
-  height: min(689px, 93.95vw);
+  width: min(665px, 88.66vw);
+  height: min(665px, 88.66vw);
   background-size:contain;
-  background-image: url("/images/lsplash1.jpg");
-  background-image: image-set("/images/lsplash1.jpg" 1x, "/images/lsplash1-2x.jpg" 2x);
+  background-image: url("/images/lsplash1.png");
+  background-image: image-set("/images/lsplash1.png" 1x, "/images/lsplash1-2x.jpg" 2x);
 }
 
 /*
@@ -49,7 +53,7 @@ nav{
 
 .navbutton{
   width: min(72px, 9vw);
-  margin-top: 3rem;
+  margin-top: min(2.7em, 4.68vw);
 }
 
 #webrings{
@@ -280,6 +284,16 @@ ul {
   right: calc(min(40px, 50vw) - 2rem);
 }
 
+#kss17{
+  height: min(310px, 42.272vw);
+  width: min(310px, 49.502vw);
+  background-size:contain;
+  background-image: url("/images/gallery/17p.jpg");
+  background-image: image-set("/images/gallery/17p.jpg" 1x, "/images/gallery/17p2x.jpg" 2x);
+  border: 0.3rem solid black;
+  margin: 0rem 0.3rem 0.3rem 0rem;
+}
+
 #sk16{
   height: min(310px, 42.272vw);
   width: min(310px, 49.502vw);
@@ -287,7 +301,6 @@ ul {
   background-image: url("/images/gallery/16p.jpg");
   background-image: image-set("/images/gallery/16p.jpg" 1x, "/images/gallery/16p2x.jpg" 2x);
   border: 0.3rem solid black;
-  margin: 0rem 0.3rem 0.3rem 0rem;
 }
 
 #skwk{
